@@ -19,6 +19,7 @@ export default class ChromeBoisDomain extends Component {
       resize('-')
     }
   }
+  
   render() {
     return (
       <canvas
