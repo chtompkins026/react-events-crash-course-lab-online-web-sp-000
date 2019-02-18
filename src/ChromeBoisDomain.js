@@ -12,18 +12,19 @@ export default class ChromeBoisDomain extends Component {
     toggleCycling();
   }
    
-  handleKeyDown = (e) => {
-    if (e.key === 'a'){
-      resize('+');
-    } else if (e.key === 's') {
+   handleKeyDown = (e) => {
+    if(e.key === 'a' ){
+      resize('+')
+    } else if(e.key === 's') {
       resize('-')
     }
   }
-   
   render() {
     return (
-      <canvas 
+      <canvas
         onMouseMove={this.handleMouseMove}
+        onClick={this.handleClick}
+        onKeyDown={this.handleKeyDown}
         width='900'
         height='600'
         tabIndex="0">
