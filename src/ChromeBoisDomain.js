@@ -9,7 +9,7 @@ export default class ChromeBoisDomain extends Component {
   }
   
   handleClick = () => {
-    
+    toggleCycling();
   }
    
   /* TODO: Add an event listener to the `<canvas>` element to capture when a key
